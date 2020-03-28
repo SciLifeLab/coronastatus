@@ -1,14 +1,12 @@
 import config from '../config';
 
-<<<<<<< HEAD
-export type Locale = 'no' | 'nl' | 'en' | 'se' | 'es-MX' | 'sk' | 'it' | 'tr';
-=======
 export type Locale =
   | 'no'
   | 'nl'
   | 'en'
   | 'en-US'
   | 'en-AU'
+  | 'en-MT'
   | 'es-MX'
   | 'sk'
   | 'it'
@@ -23,7 +21,6 @@ export type Locale =
   | 'en-SG'
   | 'ms-MY'
   | 'se';
->>>>>>> upstream/master
 
 type Urls = {
   [locale in Locale]: {
@@ -69,17 +66,6 @@ const localeAwareUrls: Urls = {
     apiDocs: '/api-docs',
     statistics: '/statistics'
   },
-<<<<<<< HEAD
-  se: {
-    submitReport: '/',
-    profile: '/halsotillstand',
-    privacyPolicy: '/integritet',
-    map: '/karta',
-    contributors: '/frivilliga',
-    api: '/api',
-    apiDocs: '/api-docs',
-    statistics: '/statistik'
-=======
   'en-US': {
     submitReport: '/',
     profile: '/healthcondition',
@@ -109,7 +95,16 @@ const localeAwareUrls: Urls = {
     api: '/api',
     apiDocs: '/api-docs',
     statistics: '/statistics'
->>>>>>> upstream/master
+  },
+  'en-MT': {
+    submitReport: '/',
+    profile: '/healthcondition',
+    privacyPolicy: '/privacy-statement',
+    map: '/map',
+    contributors: '/contributors',
+    api: '/api',
+    apiDocs: '/api-docs',
+    statistics: '/statistics'
   },
   'es-MX': {
     submitReport: '/',
